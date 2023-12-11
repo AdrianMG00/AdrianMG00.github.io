@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Source+Sans+Pro:wght@200&family=Ubuntu:wght@300;500;700&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*NAVEGADOR*/
+
+/* Referente al navegador */
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+    background-color: #8ecae6;
+    padding-right: 50px;
+    box-shadow: 0 2px #264653;
+}
+
+/*Elementos del navegador*/
+.nav-el{
+    font-family: 'Ubuntu';
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-el:hover{
+    color: #fff;
+}
+
+.nav-inicio{
+    font-size: 30px;
+    display: block;
+    margin-right: 450px;
+}
+
+/*SECCIONES*/
+
+/*Referente a todas las secciones*/
+.section{
+    width: 100%;
+    display: flex;
+    background-color: #caf0f8;
+}
+
+/*SECCION SOBRE MI*/
+
+/*Seccion sobre mi*/
+#sobre-mi{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/*Etiqueta sobre mi*/
+.sobremi{
+    color: #264653;
+    text-shadow: 0 3px black;
+}
+
+
+/*Contenedor de los elementos sobre mi*/
+.div-sobremi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+/*Contenedor de la descripción sobre mi*/
+
+.div-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+    height: 300px;
+}
+
+/*Boton de descarga cv*/
+.button-cv{
+    height: 50px;
+    width:500px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+    font-size: 21px;
+    background-color: #2a9d8f;
+    box-shadow: 0 2px #264653;
+}
+
+.button-cv:hover{
+    color: white;
+    animation: descargar 1500ms linear forwards alternate;
+}
+
+ @keyframes descargar{
+    0%{
+        font-size: 22px;
+        background-color: #2a9d8f;
+    }
+
+    50%{
+        font-size: 27px;
+        background-color: darkblue;
+    }
+    100%{
+        font-size: 22px;
+        background-color: #2a9d8f;
+    }
+ }
+
+/*Logo de la web*/
+.img-logo{
+    height: 100px;
+    width: 100px;
+}
+
+/*Descripcion sobre mi*/
+.descripcion{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/*Titulo de descripción*/
+.titulo-desc{
+    font-weight: bold;
+    color: #264653;
+}
+
+.negrita{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+/*Contenedores de las fotos*/
+.div-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.div-img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.img-sobremi2{
+    height: 75px;
+    width: 75px;
+}
+/*Contenedor de mis aficiones*/
+
+.div-aficiones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color:#2a9d8f;
+}
+
+.logos-aficiones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: black;
+}
+
+/*Contenedor de cada una de mis aficiones*/
+.aficiones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+/*Mi foto de la orla*/
+.img-sobremi{
+    flex-wrap: wrap;
+    height: 255px;
+    width: 204px;
+}
+
+/*FORMACIÓN*/
+
+/*Sección de mi formación*/
+#formacion{
+    height: 550px;
+    flex-direction: column;
+}
+
+/*Contenedor de mi formación*/
+.formacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    gap: 50px;
+}
+
+/*Texto del contenedor de mi formación*/
+.formacion p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*Contenedores de los estudios*/
+.estudios{
+    background-color: white;
+    box-shadow: 0 2px #264653;
+    border-radius: 8px;
+    text-align: center;
+    
+    
+}
+
+
+/*Texto de estudios oficiales*/
+/*.formacion-oficial .t2-sisla {
+    padding-bottom: 50px;
+}*/
+
+.logo-esi{
+    width: 225px;
+    height: 75px;
+    margin-bottom: 25px;
+}
+
+/*Contenedor de formación adicional*/
+.formacion-adicional img{
+    height: 200px;
+    width: 225px;
+}
+
+/*Contenedor etiqueta*/
+.etiqueta-seccion{
+    margin-top: 50px;
+    margin-left: 700px;
+    margin-bottom: 50px;
+    color: #2f3e46;
+    text-shadow: 0 2px black;
+}
+
+/*HABILIDADES*/
+
+#habilidades{
+    height: 700px;
+    flex-direction: column;
+}
+/*Contenedor de la seccion habilidades*/
+.habilidades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    gap: 150px;
+}
+
+/*Tamaño de las imágenes de las habilidades*/
+.logo{
+    height: 40px;
+    width: 40px;
+}
+ /*Contiene todos los elemntos de las competencias*/
+.contenedor-habilidades{
+    width:400px;
+    height: 200px;
+    border: solid 4px #2a9d8f;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px #264653;
+    background-color: white;
+}
+
+/*Contiene todas las imágenes y la etiqueta*/
+.contenedor-elementos-habilidades{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+/*Contiene cada imagen y etiqueta de las habilidades*/
+.elemento-habilidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*Contiene las etiquetas de las secciones de las habilidades*/
+.etiqueta-habilidad{
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+    padding: 25px;
+}
+
+/*PORTFOLIO*/
+
+/*Referente a toda la seccion portfolio*/
+#portfolio{
+    height: 900px;
+    flex-direction: column;
+}
+
+/*Referente al contenedor de todas las imágenes*/
+.contenedor-portfolio{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px;
+}
+
+/*Botón que contiene la imagen*/
+.boton-modales{
+    background-color: transparent;
+    border: none;
+}
+/*Contenedor de cada imagen*/
+.contenedor-img{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items:center;
+    
+}
+
+.contenedor-img p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #264653;
+}
+/*Formato imágenes*/
+.img-portfolio{
+    height: 300px;
+    width: 375px;
+    transition: transform 0.5s ease;
+}
+
+.img-portfolio:hover{
+    transform: scale(1.05);
+}
+
+/*CONTACTO*/
+/*Referente a toda la seccion contacto*/
+#contacto{
+    height: 800px;
+    flex-direction: column;
+}
+
+/*Contiene todos los datos*/
+.contenedor-datos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Formato de las imágenes de los datos*/
+.contenedor-datos img{
+    height: 35px;
+    width: 40px;
+}
+
+/*Contenedor de los datos personales*/
+.datos-personales{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 50px;
+    width: 300px;
+    height: 500px;
+}
+
+/*Contenedor de cada elemento de los datos personales*/
+.elemento-datos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-weight: 700;
+    font-size: 18px;
+    gap: 15px;
+}
+
+/*Contenedor redes sociales y ubicación*/
+.redes-ubicacion{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+/*Imagenes de la ubicación*/
+.redes-ubicacion a img{
+    height: 350px;
+    width: 500px;
+}
+
+/*FOOTER*/
+
+.footer{
+    width: 100%;
+    background-color: #264653;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    font-family: 'Lora', serif;
+    gap: 10px;
+}
+.redes-sociales{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.redes-sociales p{
+    font-weight: 700;
+    font-size: 18px;
+}
+.img-r-s{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.redes-sociales a img{
+    height: 50px;
+    width: 75px;
+    transition: transform 1s ease;
+}
+
+.redes-sociales a img:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 420px){
+
+    body{
+        width: 420px;
+    }
+    
+    .etiqueta-seccion{
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-bottom: 50px;        
+    }
+        
+    .nav{
+        width: 420px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-right: 0%;
+    }
+    
+    .nav-el{
+        font-size: 20px;
+    }
+    
+    .nav-inicio{
+        font-size: 25px;
+        margin-right: 0px;
+        margin-bottom: 100px;
+    }
+    
+    #sobre-mi{
+        height: 1000px;
+        width: 420px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .sobremi{
+        text-shadow: 0 2px black;
+    }
+    
+    .titulo-desc{
+        width: 420px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .div-sobremi{
+        width: 420px;
+        height: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .div-desc{
+        width: 420px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .button-cv{
+        
+        height: 50px;
+        width: 300px;
+    }
+    
+    .descripcion{
+        width: 420px;
+        height: 400px;
+        
+    }
+    
+    .div-img2{
+        margin-bottom: 50px;    
+    }
+    
+    #formacion{
+        height: 1400px;
+    }
+    
+    #habilidades{
+        height: 1100px;
+    }
+    
+    .habilidades{
+        gap: 50px;
+    }
+    
+    #portfolio{
+        height: 1500px;
+    }
+    
+    #contacto{
+        height: 1000px;
+    }
+    
+    .contenedor-datos{
+        flex-direction: column;
+    }
+    
+    .redes-ubicacion a img{
+        width: 420px;
+    }
+    
+    .footer{
+        width: 420px;
+    }
+}
+    
+
+@media (min-width: 430px) and (max-width: 800px){
+
+    .etiqueta-seccion{
+        width: 800px;
+        margin-left: 300px;
+    }
+        
+    .nav{
+        width: 800px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;   
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-right: 0%;
+    }
+    
+    .nav-el{
+        font-size: 20px;
+    }
+    
+    .nav-inicio{
+        font-size: 25px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    
+    #sobre-mi{
+        height: 1200px;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sobremi{
+        text-shadow: 0 2px black;
+    }
+    
+    .titulo-desc{
+        width: 600px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .div-sobremi{
+        width: 800px;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap ;
+        gap: 50px;
+    }
+    
+    .div-desc{
+        width: 800px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .button-cv{
+        height: 100px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .descripcion{
+        width: 600px;
+        height: 400px;
+        justify-content: center;
+    }
+    
+    .div-img2{
+        margin-bottom: 50px;    
+    }
+    
+    #formacion{
+        height: 800px;
+        width: 800px;
+    }
+    
+    #habilidades{
+        height: 1100px;
+        width: 800px;
+    }
+    
+    .habilidades{
+        gap: 50px;
+
+    }
+    
+    #portfolio{
+        height: 2100px;
+        width: 800px;
+    }
+    
+    #contacto{
+        height: 800px;
+        width: 800px;
+    }
+    
+    .contenedor-datos{
+        flex-direction: column;
+    }
+    
+    .datos-personales{
+        width: 800px;
+        height: 300px;
+        flex-direction: row;
+    }
+    .redes-ubicacion a img{
+        width: 500px;
+    }
+    .footer{
+        width: 800px;
+    }
+}
+
+@media (min-width: 801px) and (max-width:1100px){
+    
+    .etiqueta-seccion{
+        width: 300px;
+        margin-left: 450px;
+    }
+    
+    .nav{
+        width: 1100px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;   
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-right: 0%;
+    }
+    
+    .nav-inicio{
+        margin-right: 50px;
+    }
+    
+    #sobre-mi{
+        height: 1000px;
+        width: 1100px;
+    }
+    
+    .titulo-desc{
+        width: 600px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .div-sobremi{
+        width: 1200px;
+        height: 800px;
+        flex-direction: row;
+        flex-wrap: wrap ;
+        gap: 50px;
+    }
+    
+    #formacion{
+        height: 800px;
+        width: 1100px;
+    }
+    
+    #habilidades{
+        height: 700px;
+        width: 1100px;
+    }
+    
+    .habilidades{
+        gap: 50px;
+
+    }
+    
+    #portfolio{
+        height: 1300px;
+        width: 1100px;
+    }
+    
+    #contacto{
+        height: 900px;
+        width: 1100px;
+    }
+    
+    .contenedor-datos{
+        flex-direction: column;
+    }
+    
+    .datos-personales{
+        width: 800px;
+        height: 300px;
+        flex-direction: row;
+    }
+    .redes-ubicacion a img{
+        width: 500px;
+    }
+    .footer{
+        width: 1100px;
+    }
+}
